@@ -1,0 +1,15 @@
+In primul bloc din main se citeste un fisier cu numele 'flag' si se salveaza marimea fisierului
+Dupa care se ajunge la un for loop de la 0 la marimea fisierului
+
+ROL A B - rotate A left by B
+
+THE ALGORITHM INSIDE THE FOOR LOP IS:
+--------------------------------------------------------------
+buffer[i] = buffer[i] ^ randNr1;
+randNr2 = randNr2 & 7;
+buffer[i] = (buffer[i] << randNr2) | ( ( buffer[i] >> (8 - randNr2) ) );
+--------------------------------------------------------------
+
+Wrote the decryptor, but some of the characters are not right...
+
+Solved it: I needed to use usigned char instead of char.
